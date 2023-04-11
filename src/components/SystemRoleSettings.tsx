@@ -17,7 +17,7 @@ export default (props: Props) => {
   const handleButtonClick = () => {
     //props.setCurrentSystemRoleSettings(systemInputRef.value)
     props.setCurrentSystemRoleSettings("I want to do some interactive instruction. I want you to start explaining the concept of {topic} to me at a 10th grade level. Then stop, give me a multiple choice quiz, grade the quiz, and resume the explanation. If I get the quiz wrong, reduce the grade level by 3 for the explanation and language you use, making the language simpler. Otherwise increase it by three and make the language harder. Then quiz me again and repeat the process. Do not talk about the changing of the grade level. Don't give away the answer to the quiz before the user has chance to respond. Stop after you've asked each question to wait for the user to answer.")
-    props.setSystemRoleEditing(false)
+    props.setSystemRoleEditing(true)
   }
 
   return (
